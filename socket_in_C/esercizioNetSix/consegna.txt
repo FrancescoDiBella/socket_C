@@ -1,0 +1,15 @@
+esercizio 1)
+
+creare un server che data una stringa (nome_serie,n)
+n ---> numero episodio
+nome_serie ---> nome della nome_serie
+',' ---> discriminante della stringa
+
+restituisce se l'episodio c'è o non c'è.
+
+
+esercizio 2)
+//da vedere su teams
+
+
+//SERVER WEB  CON "\r\n"

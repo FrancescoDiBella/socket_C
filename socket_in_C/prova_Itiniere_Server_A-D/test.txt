@@ -1,0 +1,29 @@
+   
+   Variante con do while per la read e validazione della stringa
+    do{
+        bytes_read = read(clientDescriptor,
+                            buffer + totalBytes,
+                            buffer_size - totalBytes);
+
+        if(bytes_read == -1){
+            perror("Error on read():");
+            exit(1);
+        }
+
+        totalBytes += bytes_read;
+
+        printf("Bytes read: %lu\n", bytes_read);
+        printf("Last byte read: (%d)\n", buffer[totalBytes-1]);
+
+    }while(bytes_read > 0 && buffer[totalBytes-1]!='\n');
+
+____________________________________________________________________________________________________________________________
+|
+|    //DNS 
+|    gethostbyname(const char * host_name_or_ip) -> restituisce una stringa che equivale a name or ip 
+|                                                    contrariamente a ciò che si passa come argomento
+|
+|   0.0.0.0 OPPURE 127.0.0.1 == CONNESSIONE SU QUALUNQUE PORTA SIA ATTIVA. CODICE PORTABILE
+|
+|___________________________________________________________________________________________________________________________|
+
